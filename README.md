@@ -1,4 +1,4 @@
-﻿# iyzipay-donnetcore
+﻿# iyzipay-dotnetcore
 
 # Important Notice
 This repo is derived from iyzipay-dotnet[https://github.com/iyzico/iyzipay-dotnet] under MIT license.
