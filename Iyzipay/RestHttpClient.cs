@@ -17,7 +17,7 @@ namespace Iyzipay
             return new RestHttpClient();
         }
 
-        public T Get<T>(String url)
+        public T Get<T>(string url)
         {
             HttpClient httpClient = new HttpClient();
             HttpResponseMessage httpResponseMessage = httpClient.GetAsync(url).Result;
@@ -25,10 +25,10 @@ namespace Iyzipay
             return JsonConvert.DeserializeObject<T>(httpResponseMessage.Content.ReadAsStringAsync().Result);
         }
 
-        public T Post<T>(String url, WebHeaderCollection headers, BaseRequest request)
+        public T Post<T>(string url, WebHeaderCollection headers, BaseRequest request)
         {
             HttpClient httpClient = new HttpClient();
-            foreach (String key in headers.Keys)
+            foreach (string key in headers.Keys)
             {
                 httpClient.DefaultRequestHeaders.Add(key, headers.Get(key));
             }
@@ -36,10 +36,10 @@ namespace Iyzipay
             return JsonConvert.DeserializeObject<T>(httpResponseMessage.Content.ReadAsStringAsync().Result);
         }
 
-        public T Delete<T>(String url, WebHeaderCollection headers, BaseRequest request)
+        public T Delete<T>(string url, WebHeaderCollection headers, BaseRequest request)
         {
             HttpClient httpClient = new HttpClient();
-            foreach (String key in headers.Keys)
+            foreach (string key in headers.Keys)
             {
                 httpClient.DefaultRequestHeaders.Add(key, headers.Get(key));
             }
@@ -54,10 +54,10 @@ namespace Iyzipay
             return JsonConvert.DeserializeObject<T>(httpResponseMessage.Content.ReadAsStringAsync().Result);
         }
 
-        public T Put<T>(String url, WebHeaderCollection headers, BaseRequest request)
+        public T Put<T>(string url, WebHeaderCollection headers, BaseRequest request)
         {
             HttpClient httpClient = new HttpClient();
-            foreach (String key in headers.Keys)
+            foreach (string key in headers.Keys)
             {
                 httpClient.DefaultRequestHeaders.Add(key, headers.Get(key));
             }

@@ -9,7 +9,7 @@ namespace Iyzipay.Model
         public long? BankId { get; set; }
         public List<BkmInstallmentPrice> InstallmentPrices { get; set; }
 
-        public String ToPKIRequestString()
+        public string ToPKIRequestString()
         {
             return ToStringRequestBuilder.NewInstance()
                 .Append("bankId", BankId)

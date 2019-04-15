@@ -4,10 +4,10 @@ namespace Iyzipay.Request
 {
     public class RetrieveInstallmentInfoRequest : BaseRequest
     {
-        public String BinNumber { get; set; }
-        public String Price { get; set; }
+        public string BinNumber { get; set; }
+        public string Price { get; set; }
 
-        public override String ToPKIRequestString()
+        public override string ToPKIRequestString()
         {
             return ToStringRequestBuilder.NewInstance()
                 .AppendSuper(base.ToPKIRequestString())

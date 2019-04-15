@@ -5,7 +5,7 @@ namespace Iyzipay.Model
 {
     public class PeccoPayment : PaymentResource
     {
-        public String Token { get; set; }
+        public string Token { get; set; }
 
         public static PeccoPayment Create(CreatePeccoPaymentRequest request, Options options)
         {

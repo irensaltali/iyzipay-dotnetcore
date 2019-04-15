@@ -4,8 +4,8 @@ namespace Iyzipay
 {
     public class Options
     {
-        public String ApiKey { get; set; }
-        public String SecretKey { get; set; }
-        public String BaseUrl { get; set; }
+        public string ApiKey { get; set; }
+        public string SecretKey { get; set; }
+        public string BaseUrl { get; set; }
     }
 }

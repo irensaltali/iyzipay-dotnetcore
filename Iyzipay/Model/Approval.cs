@@ -1,11 +1,10 @@
 ﻿using Iyzipay.Request;
-using System;
 
 namespace Iyzipay.Model
 {
     public class Approval : IyzipayResource
     {
-        public String PaymentTransactionId { get; set; }
+        public string PaymentTransactionId { get; set; }
 
         public static Approval Create(CreateApprovalRequest request, Options options)
         {

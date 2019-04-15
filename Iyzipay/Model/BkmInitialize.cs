@@ -5,8 +5,8 @@ namespace Iyzipay.Model
 {
     public class BkmInitialize : IyzipayResource
     {
-        public String HtmlContent { get; set; }
-        public String Token { get; set; }
+        public string HtmlContent { get; set; }
+        public string Token { get; set; }
         
         public static BkmInitialize Create(CreateBkmInitializeRequest request, Options options)
         {

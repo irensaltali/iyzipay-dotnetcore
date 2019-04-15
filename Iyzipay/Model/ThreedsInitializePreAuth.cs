@@ -7,7 +7,7 @@ namespace Iyzipay.Model
     public class ThreedsInitializePreAuth : IyzipayResource
     {
         [JsonProperty(PropertyName = "threeDSHtmlContent")]
-        public String HtmlContent { get; set; }
+        public string HtmlContent { get; set; }
 
         public static ThreedsInitializePreAuth Create(CreatePaymentRequest request, Options options)
         {

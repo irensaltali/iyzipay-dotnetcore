@@ -6,19 +6,19 @@ namespace Iyzipay.Request
 {
     public class CreatePeccoInitializeRequest : BaseRequest
     {
-        public String Price { get; set; }
-        public String PaidPrice { get; set; }
-        public String Currency { get; set; }
-        public String BasketId { get; set; }
-        public String PaymentGroup { get; set; }
-        public String PaymentSource { get; set; }
+        public string Price { get; set; }
+        public string PaidPrice { get; set; }
+        public string Currency { get; set; }
+        public string BasketId { get; set; }
+        public string PaymentGroup { get; set; }
+        public string PaymentSource { get; set; }
         public Buyer Buyer { get; set; }
         public Address ShippingAddress { get; set; }
         public Address BillingAddress { get; set; }
         public List<BasketItem> BasketItems { get; set; }
-        public String CallbackUrl { get; set; }
+        public string CallbackUrl { get; set; }
 
-        public override String ToPKIRequestString()
+        public override string ToPKIRequestString()
         {
             return ToStringRequestBuilder.NewInstance()
                 .AppendSuper(base.ToPKIRequestString())

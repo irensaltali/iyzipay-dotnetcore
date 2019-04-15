@@ -5,9 +5,9 @@ namespace Iyzipay.Model
 {
     public class PeccoInitialize : IyzipayResource
     {
-        public String HtmlContent { get; set; }
-        public String RedirectUrl { get; set; }
-        public String Token { get; set; }
+        public string HtmlContent { get; set; }
+        public string RedirectUrl { get; set; }
+        public string Token { get; set; }
         public long? TokenExpireTime { get; set; }
 
         public static PeccoInitialize Create(CreatePeccoInitializeRequest request, Options options)

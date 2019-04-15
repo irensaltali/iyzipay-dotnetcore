@@ -7,7 +7,7 @@ namespace Iyzipay.Model
     public class ThreedsInitialize : IyzipayResource
     {
         [JsonProperty(PropertyName = "threeDSHtmlContent")]
-        public String HtmlContent { get; set; }
+        public string HtmlContent { get; set; }
 
         public static ThreedsInitialize Create(CreatePaymentRequest request, Options options)
         {

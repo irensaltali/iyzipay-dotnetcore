@@ -4,6 +4,6 @@ namespace Iyzipay
 {
     public interface RequestStringConvertible
     {
-        String ToPKIRequestString();
+        string ToPKIRequestString();
     }
 }

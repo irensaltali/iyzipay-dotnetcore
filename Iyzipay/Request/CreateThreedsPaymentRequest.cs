@@ -4,10 +4,10 @@ namespace Iyzipay.Request
 {
     public class CreateThreedsPaymentRequest : BaseRequest
     {
-        public String PaymentId { get; set; }
-        public String ConversationData { get; set; }
+        public string PaymentId { get; set; }
+        public string ConversationData { get; set; }
 
-        public override String ToPKIRequestString()
+        public override string ToPKIRequestString()
         {
             return ToStringRequestBuilder.NewInstance()
                 .AppendSuper(base.ToPKIRequestString())

@@ -5,9 +5,9 @@ namespace Iyzipay.Model
 {
     public class BasicBkm : BasicPaymentResource
     {
-        public String Token { get; set; }
-        public String CallbackUrl { get; set; }
-        public String PaymentStatus { get; set; }
+        public string Token { get; set; }
+        public string CallbackUrl { get; set; }
+        public string PaymentStatus { get; set; }
 
         public static BasicBkm Retrieve(RetrieveBkmRequest request, Options options)
         {

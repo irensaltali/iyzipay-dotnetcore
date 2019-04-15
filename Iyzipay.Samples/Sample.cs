@@ -14,8 +14,8 @@ namespace Iyzipay.Samples
         {
             options = new Options
             {
-                ApiKey = "api key",
-                SecretKey = "secret key",
+                ApiKey = "sandbox-ecTcpoxlOm4LIDZhSdzobE3Hv10qybBl",
+                SecretKey = "sandbox-Ctiqcajui9wDi7YXDPLpAw3S72A0iZYe",
                 BaseUrl = "https://sandbox-api.iyzipay.com"
             };
         }

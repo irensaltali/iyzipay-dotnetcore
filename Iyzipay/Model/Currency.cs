@@ -4,7 +4,7 @@ namespace Iyzipay.Model
 {
     public sealed class Currency
     {
-        private readonly String value;
+        private readonly string value;
 
         public static readonly Currency TRY = new Currency("TRY");
         public static readonly Currency EUR = new Currency("EUR");
@@ -15,12 +15,12 @@ namespace Iyzipay.Model
         public static readonly Currency RUB = new Currency("RUB");
         public static readonly Currency CHF = new Currency("CHF");
 
-        private Currency(String value)
+        private Currency(string value)
         {
             this.value = value;
         }
 
-        public override String ToString()
+        public override string ToString()
         {
             return value;
         }

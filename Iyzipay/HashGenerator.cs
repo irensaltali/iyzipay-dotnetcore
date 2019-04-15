@@ -10,7 +10,7 @@ namespace Iyzipay
         {
         }
 
-        public static String GenerateHash(String apiKey, String secretKey, String randomString, BaseRequest request)
+        public static string GenerateHash(string apiKey, string secretKey, string randomString, BaseRequest request)
         {
             HashAlgorithm algorithm = new SHA1Managed();
             string hashStr = apiKey + randomString + secretKey + request.ToPKIRequestString();

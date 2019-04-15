@@ -1,5 +1,4 @@
 ﻿using Iyzipay.Request;
-using System;
 using Newtonsoft.Json;
 
 namespace Iyzipay.Model
@@ -7,7 +6,7 @@ namespace Iyzipay.Model
     public class BasicThreedsInitializePreAuth : IyzipayResource
     {
         [JsonProperty(PropertyName = "threeDSHtmlContent")]
-        public String HtmlContent { get; set; }
+        public string HtmlContent { get; set; }
 
         public static BasicThreedsInitializePreAuth Create(CreateBasicPaymentRequest request, Options options)
         {

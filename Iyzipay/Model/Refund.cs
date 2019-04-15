@@ -5,11 +5,11 @@ namespace Iyzipay.Model
 {
     public class Refund : IyzipayResource
     {
-        public String PaymentId { get; set; }
-        public String PaymentTransactionId { get; set; }
-        public String Price { get; set; }
-        public String Currency { get; set; }
-        public String ConnectorName { get; set; }
+        public string PaymentId { get; set; }
+        public string PaymentTransactionId { get; set; }
+        public string Price { get; set; }
+        public string Currency { get; set; }
+        public string ConnectorName { get; set; }
 
         public static Refund Create(CreateRefundRequest request, Options options)
         {
